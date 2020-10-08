@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+body{
+    background-color:rgb(248, 218, 248);
+    
+} 
+
+.dateDiv{
+    width:30vw;
+    padding-top: 6px;
+    padding-bottom:6px;    
+    background-color: rgb(93, 173, 238);
+    text-align: center;
+    height: 55px;
+    border-radius: 8px;
+    font-size: 30px;
+    color:white;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    z-index: 10;
+    margin-left:35%;
+    box-shadow: 10px 10px 15px rgb(65, 15, 85,0.792);
+}
+
+.listDiv{
+    width:30vw;
+    background-color: white;
+    /* text-align: center; */
+    height:auto;
+    border-radius: 8px;
+    color:black;
+    margin-top: 3%;
+    margin-left:35%;
+    z-index: 10;
+    letter-spacing: 1px;
+    box-shadow: 10px 15px 15px rgb(65, 15, 85,0.792);
+    padding-bottom: 15px;
+}
+
+.itemlist{
+    height: 50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.itemlist:hover{
+    box-shadow: 1px 3px 10px grey;
+    background-color: rgb(253, 210, 253);
+}
+
+input[type="text"]{
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+input[type="checkbox"]{
+    height:15px;
+    width:15px;
+    margin-left: 30px;
+    margin-right: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.inputList{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control{
+    border-bottom:1.2px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width:90%;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-radius: 0%;
+}
+
+.addbutton{
+    margin-top: 10px;
+    margin-right:10px;
+    width: 50px;
+    height:47px;
+    border-radius: 50%;
+    background-color: rgb(179, 54, 179);
+    font-size: 30px;
+    color:white;
+    cursor: pointer;
+    border: none;
+}
+
+footer{
+    position: relative;
+    margin-left: 36vw;
+    top:27px;
+    letter-spacing: 2px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+svg{
+    z-index:-100;
+    position: fixed;
+    bottom:0px;
+}
+
+.timeDiv{
+    z-index: -10;
+    color:white;
+    font-size: 1.5rem;
+    position : fixed;
+    bottom: 100px;
+    right:20px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.7px;
+}
+
+.dayDiv{
+    z-index: -10;
+    color:white;
+    font-size: 2rem;
+    position : fixed;
+    bottom: 100px;
+    left:20px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+.loginDiv{
+    background:linear-gradient(45deg, rgb(65, 15, 85,0.792), rgba(70, 32, 209, 0.592));
+    box-shadow: 3px 7px 1px rgba(180, 77, 221, 0.792);
+    padding:3px 15px 3px 15px;
+    font-size: 1.5rem;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius:30px ;
+    color:white;
+    position :fixed;
+    top:30px;
+    right:70px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.loginDiv:hover{
+    background:linear-gradient(45deg,  rgba(70, 32, 209, 0.592),rgb(65, 15, 85,0.792));
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 80; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+.darkletter{
+    position: fixed;
+    left:100px;
+    top:16px;
+    font-size: 28px;
+}

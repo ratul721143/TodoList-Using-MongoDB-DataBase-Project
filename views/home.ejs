@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+        <div class="loginDiv">LOGIN</div>
+        <div class="dateDiv">
+            <%= listTitle %>
+        </div>
+        <div class="listDiv">
+            <% for(var i=0 ; i < newListItem.length ; i++){ %>
+                <form action="/delete" method="POST">
+                    <div class="itemlist">
+                        <input type="checkbox" class="form-control" name="checkbox" value="<%= newListItem[i]._id %>" 
+                         onChange="this.form.submit()">
+                        <%= newListItem[i].name %>
+                    </div>
+                </form>
+            <% } %>
+                <form action="/" method="POST" class="addList">
+                    <div class="inputList">
+                        <input type="text" class="form-control" placeholder="New item" 
+                        name="newitem" autocomplete="off" >
+                        <button type="submit" class="addbutton">+</button>
+                    </div>
+                </form>
+        </div>
+            <div id="myModal" class="modal">
+                
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <center><h1>Login Form</h1></center>
+
+                  <span class="close">&times;</span>
+                </div>
+              
+            </div>
+        
+            
+            <div class="darkletter"><input type="checkbox" id="enab">Dark Mode</div>
+
+        <div class="dayDiv"></div>
+        <div class="timeDiv"></div>
+        <footer>copy @ ratul-maity @ maity Group Of Industry </footer>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path id="svgPath" fill="rgb(65, 15, 85,0.792)" fill-opacity="1" d="M0,64L720,256L1440,0L1440,320L720,320L0,320Z"></path>
+        </svg>
+        <script src="js/jquery.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/styling.js"></script>
+</body>
+</html>
