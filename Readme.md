@@ -19,15 +19,15 @@ Any one can add or delete data in this todoList.Everyone can see these datas.
 
 ### Technologies and Tools
 I uses the folling technologies and tools
- > **Html**        
- > **css** - for styling
- > **bootstrap 4** - for styling
- > **Javasript** 
- > **Jquery** - javascript library
- > **Node Js** - backend
- > **Express** - beckend 
- > **MongoDB** -  for database server 
- > **npm modules** - use various packages to create my project easily 
+ > **Html**        <br/>
+ > **css** - for styling <br/>
+ > **bootstrap 4** - for styling <br/>
+ > **Javasript**  <br/>
+ > **Jquery** - javascript library <br/>
+ > **Node Js** - backend <br/>
+ > **Express** - beckend  <br/>
+ > **MongoDB** -  for database server  <br/>
+ > **npm modules** - use various packages to create my project easily  <br/>
  
  
  >****
